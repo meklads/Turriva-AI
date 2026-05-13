@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import turrivaMotif from '../assets/turriva-motif.png'
 import { useLang } from '../lib/LanguageContext'
 import { t, tx } from '../lib/translations'
 
@@ -146,7 +147,8 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* HERO */}
-      <section className="bg-hero-gradient pt-32 pb-20">
+      <section className="bg-hero-gradient pt-32 pb-20 relative overflow-hidden">
+        <img src={turrivaMotif} aria-hidden="true" alt="" className="absolute pointer-events-none select-none" style={{ width: 520, opacity: 0.06, top: -60, right: -80, transform: 'rotate(-8deg)', zIndex: 0 }} />
         <div className="container-xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="fade-in-up">
@@ -196,7 +198,8 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="section-padding bg-section-gradient">
+      <section className="section-padding bg-section-gradient relative overflow-hidden">
+        <img src={turrivaMotif} aria-hidden="true" alt="" className="absolute pointer-events-none select-none" style={{ width: 380, opacity: 0.05, bottom: -60, left: -60, transform: 'rotate(180deg)', zIndex: 0 }} />
         <div className="container-xl">
           <div className="text-center mb-16">
             <div className="tag mb-4">{tx(t.home.servicesTag, lang)}</div>
@@ -356,7 +359,8 @@ export default function Home() {
       </section>
 
       {/* CASE STUDIES */}
-      <section className="section-padding" style={{ background: 'var(--gray-warm)' }}>
+      <section className="section-padding relative overflow-hidden" style={{ background: 'var(--gray-warm)' }}>
+        <img src={turrivaMotif} aria-hidden="true" alt="" className="absolute pointer-events-none select-none" style={{ width: 340, opacity: 0.07, top: 40, right: -50, transform: 'rotate(12deg)', zIndex: 0 }} />
         <div className="container-xl">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
             <div>
@@ -403,7 +407,8 @@ export default function Home() {
       </section>
 
       {/* WHY TURRIVA */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white relative overflow-hidden">
+        <img src={turrivaMotif} aria-hidden="true" alt="" className="absolute pointer-events-none select-none" style={{ width: 300, opacity: 0.05, bottom: -40, left: -40, transform: 'rotate(-20deg)', zIndex: 0 }} />
         <div className="container-xl">
           <div className="text-center mb-16">
             <div className="tag mb-4">{tx(t.home.whyTag, lang)}</div>
@@ -436,6 +441,7 @@ export default function Home() {
           backgroundSize: '60px 60px'
         }}></div>
         <div className="geometric-circle w-96 h-96 opacity-10" style={{ top: '-80px', right: '-80px', background: 'white' }}></div>
+        <img src={turrivaMotif} aria-hidden="true" alt="" className="absolute pointer-events-none select-none" style={{ width: 420, opacity: 0.12, bottom: -80, left: -60, transform: 'rotate(15deg) scaleX(-1)', zIndex: 1 }} />
         <div className="container-xl relative z-10 text-center">
           <h2 className="section-title text-white mb-6">{tx(t.home.ctaTitle, lang)}</h2>
           <p className="subtitle text-white/75 max-w-xl mx-auto mb-10">{tx(t.home.ctaSub, lang)}</p>
