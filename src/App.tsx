@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import './index.css'
 
@@ -48,9 +48,9 @@ function Layout() {
 export default function App() {
   return (
     <LanguageProvider>
-      <HashRouter>
+      <BrowserRouter>
         <Layout />
-      </HashRouter>
+      </BrowserRouter>
     </LanguageProvider>
   )
 }

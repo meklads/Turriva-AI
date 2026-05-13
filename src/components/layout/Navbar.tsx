@@ -126,7 +126,7 @@ export default function Navbar() {
               <button
                 className={`lang-btn ${lang === 'ar' ? 'active' : ''}`}
                 onClick={() => setLang('ar')}
-              >عر</button>
+              >AR</button>
             </div>
             <Link to="/contact" className="btn-primary text-sm py-3 px-6">
               {tx(t.nav.cta, lang)}
@@ -137,7 +137,7 @@ export default function Navbar() {
           <div className="lg:hidden flex items-center gap-2">
             <div className="lang-toggle">
               <button className={`lang-btn ${lang === 'en' ? 'active' : ''}`} onClick={() => setLang('en')}>EN</button>
-              <button className={`lang-btn ${lang === 'ar' ? 'active' : ''}`} onClick={() => setLang('ar')}>عر</button>
+              <button className={`lang-btn ${lang === 'ar' ? 'active' : ''}`} onClick={() => setLang('ar')}>AR</button>
             </div>
             <button className="p-2 rounded-lg text-gray-700" onClick={() => setMenuOpen(!menuOpen)}>
               <div className="w-6 flex flex-col gap-1.5">
