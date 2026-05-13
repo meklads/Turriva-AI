@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useLang } from '../../lib/LanguageContext'
 import { t, tx } from '../../lib/translations'
-import TurrivaLogo from '../TurrivaLogo'
+import turrivaLogo from '../../assets/turriva-logo.png'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -37,35 +37,13 @@ export default function Navbar() {
       <div className="container-xl">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group" style={{ textDecoration: 'none' }}>
-            {/* T-circuit mark — inline SVG, bypasses asset cache */}
-            <div className="group-hover:scale-105 transition-transform flex-shrink-0">
-              <TurrivaLogo size={48} />
-            </div>
-            {/* Brand wordmark */}
-            <div style={{ lineHeight: 1 }}>
-              <div style={{
-                fontFamily: "'Manrope', 'Inter', sans-serif",
-                fontWeight: 800,
-                fontSize: '1.25rem',
-                letterSpacing: isAr ? '0' : '0.14em',
-                color: '#0d1f3c',
-                lineHeight: 1,
-              }}>
-                {isAr ? 'توريفا' : 'TURRIVA'}
-              </div>
-              <div style={{
-                fontFamily: "'Manrope', 'Inter', sans-serif",
-                fontWeight: 500,
-                fontSize: '0.58rem',
-                letterSpacing: isAr ? '0.04em' : '0.22em',
-                color: 'var(--teal-mid)',
-                marginTop: 4,
-                lineHeight: 1,
-              }}>
-                {isAr ? 'تجارب ذكية' : 'SMART EXPERIENCES'}
-              </div>
-            </div>
+          <Link to="/" className="group" style={{ textDecoration: 'none', display: 'inline-flex' }}>
+            <img
+              src={turrivaLogo}
+              alt="Turriva"
+              className="group-hover:scale-105 transition-transform"
+              style={{ height: 52, width: 'auto' }}
+            />
           </Link>
 
           {/* Desktop Nav */}
