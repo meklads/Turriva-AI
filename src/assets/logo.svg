@@ -1,0 +1,45 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Circuit T mark -->
+  <!-- Top horizontal bar nodes -->
+  <line x1="40" y1="48" x2="160" y2="48" stroke="#1a9db5" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- Left branch going slightly down-left -->
+  <line x1="40" y1="48" x2="30" y2="58" stroke="#1a9db5" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Right branch going slightly down-right -->
+  <line x1="160" y1="48" x2="170" y2="58" stroke="#1a9db5" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Vertical stem from center top to center node -->
+  <line x1="100" y1="48" x2="100" y2="95" stroke="#1a9db5" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- Top bar dots -->
+  <circle cx="40"  cy="48" r="3.5" fill="#2ab5cc"/>
+  <circle cx="60"  cy="48" r="2.8" fill="#2ab5cc"/>
+  <circle cx="80"  cy="48" r="2.8" fill="#2ab5cc"/>
+  <circle cx="100" cy="48" r="3.5" fill="#2ab5cc"/>
+  <circle cx="120" cy="48" r="2.8" fill="#2ab5cc"/>
+  <circle cx="140" cy="48" r="2.8" fill="#2ab5cc"/>
+  <circle cx="160" cy="48" r="3.5" fill="#2ab5cc"/>
+  <circle cx="30"  cy="58" r="2.5" fill="#1a9db5"/>
+  <circle cx="170" cy="58" r="2.5" fill="#1a9db5"/>
+
+  <!-- Radiating lines from center bottom node -->
+  <!-- Central glow node -->
+  <circle cx="100" cy="95" r="7" fill="#0d8fa8" opacity="0.25"/>
+  <circle cx="100" cy="95" r="4.5" fill="#2ab5cc"/>
+
+  <!-- 8 radiating lines downward -->
+  <line x1="100" y1="95" x2="60"  y2="140" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <line x1="100" y1="95" x2="72"  y2="145" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <line x1="100" y1="95" x2="85"  y2="148" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <line x1="100" y1="95" x2="100" y2="150" stroke="#1a9db5" stroke-width="1.3" stroke-linecap="round"/>
+  <line x1="100" y1="95" x2="115" y2="148" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <line x1="100" y1="95" x2="128" y2="145" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <line x1="100" y1="95" x2="140" y2="140" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- End dots on radiating lines -->
+  <circle cx="60"  cy="140" r="2.2" fill="#2ab5cc" opacity="0.8"/>
+  <circle cx="72"  cy="145" r="2.2" fill="#2ab5cc" opacity="0.8"/>
+  <circle cx="85"  cy="148" r="2.2" fill="#2ab5cc" opacity="0.8"/>
+  <circle cx="100" cy="150" r="2.8" fill="#2ab5cc"/>
+  <circle cx="115" cy="148" r="2.2" fill="#2ab5cc" opacity="0.8"/>
+  <circle cx="128" cy="145" r="2.2" fill="#2ab5cc" opacity="0.8"/>
+  <circle cx="140" cy="140" r="2.2" fill="#2ab5cc" opacity="0.8"/>
+</svg>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useLang } from '../../lib/LanguageContext'
 import { t, tx } from '../../lib/translations'
+import turrivaLogo from '../../assets/logo.svg'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -36,19 +37,18 @@ export default function Navbar() {
       <div className="container-xl">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-xl bg-teal-gradient flex items-center justify-center shadow-md group-hover:scale-105 transition-transform flex-shrink-0">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M10 2L18 7V13L10 18L2 13V7L10 2Z" fill="white" opacity="0.9"/>
-                <path d="M10 6L14 8.5V13.5L10 16L6 13.5V8.5L10 6Z" fill="white"/>
-              </svg>
-            </div>
+          <Link to="/" className="flex items-center gap-2 group">
+            <img
+              src={turrivaLogo}
+              alt="Turriva"
+              className="h-10 w-10 group-hover:scale-105 transition-transform flex-shrink-0"
+            />
             <div>
               <div className="font-bold text-xl tracking-tight text-gray-900 leading-tight">
                 {isAr ? 'توريفا' : 'TURRIVA'}
               </div>
-              <div className="text-xs text-gray-400 font-medium tracking-widest leading-tight -mt-0.5" style={{ letterSpacing: isAr ? '0' : undefined }}>
-                {isAr ? 'تجارب ذكية وذكاء اصطناعي' : 'SMART EXPERIENCES & AI'}
+              <div className="text-xs font-medium leading-tight -mt-0.5" style={{ color: 'var(--teal-mid)', letterSpacing: isAr ? '0' : '0.12em' }}>
+                {isAr ? 'تجارب ذكية' : 'SMART EXPERIENCES'}
               </div>
             </div>
           </Link>
