@@ -231,6 +231,65 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* FEATURED PROJECT PROOF */}
+      <section className="section-padding bg-white">
+        <div className="container-xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Image grid */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="col-span-2 rounded-2xl overflow-hidden flex items-center justify-center" style={{ height: '260px', background: 'linear-gradient(135deg, #0d5c63 0%, #1a8a94 100%)' }}>
+                <div className="text-center text-white/50">
+                  <div className="text-5xl mb-3">🏛</div>
+                  <div className="text-sm font-medium tracking-widest uppercase">Exhibition — Muslim World League</div>
+                </div>
+              </div>
+              {[
+                { icon: '🗺', label: 'Architectural Model' },
+                { icon: '📱', label: 'Interactive Screens' },
+              ].map((item) => (
+                <div key={item.label} className="rounded-2xl flex items-center justify-center" style={{ height: '150px', background: 'linear-gradient(135deg, #1a8a94 0%, #2ab5c2 100%)' }}>
+                  <div className="text-center text-white/60">
+                    <div className="text-3xl mb-1">{item.icon}</div>
+                    <div className="text-xs font-medium">{item.label}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            {/* Text */}
+            <div>
+              <div className="tag mb-5">{lang === 'ar' ? 'تنفيذ حقيقي' : 'Real Implementation'}</div>
+              <h2 className="section-title text-gray-900 mb-4">
+                {lang === 'ar' ? 'معرض رابطة العالم الإسلامي' : 'Muslim World League'}{' '}
+                <span className="gradient-text">{lang === 'ar' ? '— مكة المكرمة' : 'Exhibition'}</span>
+              </h2>
+              <p className="text-gray-500 text-lg leading-relaxed mb-8">
+                {lang === 'ar'
+                  ? 'معرض تفاعلي متكامل يجمع بين النماذج المعمارية وأنظمة العرض الرقمي والذكاء الاصطناعي وتفاعل الزوار في الوقت الفعلي.'
+                  : 'A fully integrated interactive exhibition combining architectural models, digital systems, AI visualization, and real-time visitor interaction.'}
+              </p>
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                {[
+                  { value: '50,000+', label: lang === 'ar' ? 'زائر' : 'Visitors' },
+                  { value: '12', label: lang === 'ar' ? 'منطقة تفاعلية' : 'Interactive Zones' },
+                  { value: '97%', label: lang === 'ar' ? 'رضا الزوار' : 'Visitor Satisfaction' },
+                  { value: '6', label: lang === 'ar' ? 'أنظمة متكاملة' : 'Integrated Systems' },
+                ].map((s) => (
+                  <div key={s.label} className="rounded-xl p-4" style={{ background: 'var(--gray-warm)' }}>
+                    <div className="text-2xl font-bold gradient-text">{s.value}</div>
+                    <div className="text-xs text-gray-500 mt-1">{s.label}</div>
+                  </div>
+                ))}
+              </div>
+              <Link to="/case-study/muslim-world-league" className="btn-primary">
+                {lang === 'ar' ? 'عرض دراسة الحالة الكاملة' : 'View Full Case Study'}
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ECOSYSTEM */}
       <section className="section-padding bg-white overflow-hidden">
         <div className="container-xl">

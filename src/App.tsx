@@ -13,6 +13,7 @@ import Portfolio from './pages/Portfolio'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Plans from './pages/Plans'
+import CaseStudy from './pages/CaseStudy'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -37,6 +38,7 @@ function Layout() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/plans" element={<Plans />} />
+          <Route path="/case-study/:slug" element={<CaseStudy />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

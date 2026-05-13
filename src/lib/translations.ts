@@ -10,7 +10,7 @@ export const t = {
     portfolio: { en: 'Portfolio', ar: 'أعمالنا' },
     about: { en: 'About', ar: 'عن توريفا' },
     contact: { en: 'Contact', ar: 'تواصل معنا' },
-    plans: { en: 'Build Your Package', ar: 'صمّم حزمتك' },
+    plans: { en: 'Plans & Packages', ar: 'الخطط والباقات' },
     cta: { en: 'Request Consultation', ar: 'طلب استشارة' },
   },
 
