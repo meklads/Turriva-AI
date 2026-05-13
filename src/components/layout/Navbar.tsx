@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useLang } from '../../lib/LanguageContext'
 import { t, tx } from '../../lib/translations'
-import turrivaLogo from '../../assets/logo.svg'
+import TurrivaLogo from '../TurrivaLogo'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -38,13 +38,10 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group" style={{ textDecoration: 'none' }}>
-            {/* T-circuit mark — transparent bg, scales on hover */}
-            <img
-              src={turrivaLogo}
-              alt="Turriva logo mark"
-              className="group-hover:scale-105 transition-transform flex-shrink-0"
-              style={{ height: 48, width: 'auto' }}
-            />
+            {/* T-circuit mark — inline SVG, bypasses asset cache */}
+            <div className="group-hover:scale-105 transition-transform flex-shrink-0">
+              <TurrivaLogo size={48} />
+            </div>
             {/* Brand wordmark */}
             <div style={{ lineHeight: 1 }}>
               <div style={{
