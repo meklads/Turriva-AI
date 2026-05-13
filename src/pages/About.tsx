@@ -6,7 +6,7 @@ export default function About() {
   const { lang } = useLang()
   return (
     <div className="bg-white">
-      <section className="pt-32 pb-20 bg-hero-gradient">
+      <section className="pt-44 pb-20 bg-hero-gradient">
         <div className="container-xl">
           <div className="max-w-3xl">
             <div className="tag mb-5">{tx(t.about.tag, lang)}</div>

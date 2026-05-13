@@ -115,7 +115,7 @@ export default function Portfolio() {
 
   return (
     <div className="bg-white">
-      <section className="pt-32 pb-16" style={{ background: 'var(--gray-warm)' }}>
+      <section className="pt-44 pb-16" style={{ background: 'var(--gray-warm)' }}>
         <div className="container-xl text-center">
           <div className="tag mb-5">{tx(t.port.tag, lang)}</div>
           <h1 className="hero-title text-gray-900 mb-5">{tx(t.port.title1, lang)} <span className="gradient-text">{tx(t.port.title2, lang)}</span></h1>

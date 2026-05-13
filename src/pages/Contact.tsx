@@ -32,7 +32,7 @@ export default function Contact() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="pt-32 pb-20" style={{ background: 'linear-gradient(135deg, #f4fbfc 0%, #e8f7f9 50%, #f7f9fc 100%)' }}>
+      <section className="pt-44 pb-20" style={{ background: 'linear-gradient(135deg, #f4fbfc 0%, #e8f7f9 50%, #f7f9fc 100%)' }}>
         <div className="container-xl text-center">
           <div className="tag mb-5">{tx(t.contact.tag, lang)}</div>
           <h1 className="hero-title text-gray-900 mb-6 max-w-3xl mx-auto">

@@ -19,7 +19,7 @@ export default function AITransformation() {
     <div className="bg-white" dir={ar ? 'rtl' : 'ltr'}>
 
       {/* ── HERO ── */}
-      <section className="pt-32 pb-20" style={{ background: 'linear-gradient(160deg, #f0fafa 0%, #ffffff 60%)' }}>
+      <section className="pt-44 pb-20" style={{ background: 'linear-gradient(160deg, #f0fafa 0%, #ffffff 60%)' }}>
         <div className="container-xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>

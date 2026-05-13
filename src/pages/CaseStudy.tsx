@@ -33,7 +33,7 @@ export default function CaseStudy() {
     <div className="bg-white" dir={ar ? 'rtl' : 'ltr'}>
 
       {/* ── HERO ── */}
-      <section className="pt-32 pb-20" style={{ background: 'linear-gradient(160deg, #f0fafa 0%, #ffffff 60%)' }}>
+      <section className="pt-44 pb-20" style={{ background: 'linear-gradient(160deg, #f0fafa 0%, #ffffff 60%)' }}>
         <div className="container-xl">
           <div className="flex flex-wrap items-center gap-3 mb-6">
             <Link to="/portfolio" className="text-sm text-gray-400 hover:text-teal transition-colors flex items-center gap-1">

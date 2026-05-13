@@ -147,7 +147,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* HERO */}
-      <section className="bg-hero-gradient pt-32 pb-20 relative overflow-hidden">
+      <section className="bg-hero-gradient pt-44 pb-20 relative overflow-hidden">
         <img src={turrivaMotif} aria-hidden="true" alt="" className="absolute pointer-events-none select-none" style={{ width: 520, opacity: 0.06, top: -60, right: -80, transform: 'rotate(-8deg)', zIndex: 0 }} />
         <div className="container-xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
