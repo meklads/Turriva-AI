@@ -17,11 +17,11 @@ export const t = {
   // ── HOME ───────────────────────────────────────────────────────────────────
   home: {
     heroTag: { en: 'Experience Transformation', ar: 'تحويل التجارب' },
-    heroTitle1: { en: 'Transforming Spaces Into', ar: 'نحوّل الفضاءات إلى' },
-    heroTitle2: { en: 'Intelligent Experiences', ar: 'تجارب ذكية لا تُنسى' },
+    heroTitle1: { en: '', ar: '' },
+    heroTitle2: { en: 'Smart Experiences', ar: 'Smart Experiences' },
     heroSub: {
-      en: 'Turriva combines AI, spatial design, and interactive systems to create smart environments that engage, convert, and deliver measurable results.',
-      ar: 'توريفا تجمع بين الذكاء الاصطناعي والتصميم المكاني والأنظمة التفاعلية لإنشاء بيئات ذكية تُشرك الزوار وتُحوّلهم وتُقدّم نتائج قابلة للقياس.',
+      en: 'Intelligent solutions connecting experience, technology, and data.',
+      ar: 'حلول ذكية تربط بين التجربة والتقنية والبيانات',
     },
     exploreBtn: { en: 'Explore Solutions', ar: 'استكشف الحلول' },
     consultBtn: { en: 'Request Consultation', ar: 'طلب استشارة' },
