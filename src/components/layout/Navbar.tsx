@@ -42,7 +42,7 @@ export default function Navbar() {
               src={turrivaLogo}
               alt="Turriva"
               className="group-hover:scale-105 transition-transform"
-              style={{ height: 78, width: 'auto' }}
+              style={{ height: 117, width: 'auto' }}
             />
           </Link>
 
