@@ -37,17 +37,35 @@ export default function Navbar() {
       <div className="container-xl">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
+          <Link to="/" className="flex items-center gap-3 group" style={{ textDecoration: 'none' }}>
+            {/* T-circuit mark — transparent bg, scales on hover */}
             <img
               src={turrivaLogo}
-              alt="Turriva"
-              className="h-10 w-10 group-hover:scale-105 transition-transform flex-shrink-0"
+              alt="Turriva logo mark"
+              className="group-hover:scale-105 transition-transform flex-shrink-0"
+              style={{ height: 48, width: 'auto' }}
             />
-            <div>
-              <div className="font-bold text-xl tracking-tight text-gray-900 leading-tight">
+            {/* Brand wordmark */}
+            <div style={{ lineHeight: 1 }}>
+              <div style={{
+                fontFamily: "'Manrope', 'Inter', sans-serif",
+                fontWeight: 800,
+                fontSize: '1.25rem',
+                letterSpacing: isAr ? '0' : '0.14em',
+                color: '#0d1f3c',
+                lineHeight: 1,
+              }}>
                 {isAr ? 'توريفا' : 'TURRIVA'}
               </div>
-              <div className="text-xs font-medium leading-tight -mt-0.5" style={{ color: 'var(--teal-mid)', letterSpacing: isAr ? '0' : '0.12em' }}>
+              <div style={{
+                fontFamily: "'Manrope', 'Inter', sans-serif",
+                fontWeight: 500,
+                fontSize: '0.58rem',
+                letterSpacing: isAr ? '0.04em' : '0.22em',
+                color: 'var(--teal-mid)',
+                marginTop: 4,
+                lineHeight: 1,
+              }}>
                 {isAr ? 'تجارب ذكية' : 'SMART EXPERIENCES'}
               </div>
             </div>

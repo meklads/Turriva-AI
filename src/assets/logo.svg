@@ -1,45 +1,66 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none">
-  <!-- Circuit T mark -->
-  <!-- Top horizontal bar nodes -->
-  <line x1="40" y1="48" x2="160" y2="48" stroke="#1a9db5" stroke-width="1.4" stroke-linecap="round"/>
-  <!-- Left branch going slightly down-left -->
-  <line x1="40" y1="48" x2="30" y2="58" stroke="#1a9db5" stroke-width="1.2" stroke-linecap="round"/>
-  <!-- Right branch going slightly down-right -->
-  <line x1="160" y1="48" x2="170" y2="58" stroke="#1a9db5" stroke-width="1.2" stroke-linecap="round"/>
-  <!-- Vertical stem from center top to center node -->
-  <line x1="100" y1="48" x2="100" y2="95" stroke="#1a9db5" stroke-width="1.6" stroke-linecap="round"/>
+<svg viewBox="0 0 100 125" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <!-- Top-to-bottom gradient for lines and nodes: navy → teal -->
+    <linearGradient id="lineG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#12355f"/>
+      <stop offset="55%"  stop-color="#1275a0"/>
+      <stop offset="100%" stop-color="#1fb8d0"/>
+    </linearGradient>
+    <!-- Glow halo behind center node -->
+    <radialGradient id="haloG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#1fb8d0" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1fb8d0" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Node gradient: dark blue → cyan -->
+    <linearGradient id="nodeG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#1a4a80"/>
+      <stop offset="100%" stop-color="#1fb8d0"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Top bar dots -->
-  <circle cx="40"  cy="48" r="3.5" fill="#2ab5cc"/>
-  <circle cx="60"  cy="48" r="2.8" fill="#2ab5cc"/>
-  <circle cx="80"  cy="48" r="2.8" fill="#2ab5cc"/>
-  <circle cx="100" cy="48" r="3.5" fill="#2ab5cc"/>
-  <circle cx="120" cy="48" r="2.8" fill="#2ab5cc"/>
-  <circle cx="140" cy="48" r="2.8" fill="#2ab5cc"/>
-  <circle cx="160" cy="48" r="3.5" fill="#2ab5cc"/>
-  <circle cx="30"  cy="58" r="2.5" fill="#1a9db5"/>
-  <circle cx="170" cy="58" r="2.5" fill="#1a9db5"/>
+  <!-- ── GLOW HALO around center node ── -->
+  <circle cx="50" cy="62" r="16" fill="url(#haloG)"/>
 
-  <!-- Radiating lines from center bottom node -->
-  <!-- Central glow node -->
-  <circle cx="100" cy="95" r="7" fill="#0d8fa8" opacity="0.25"/>
-  <circle cx="100" cy="95" r="4.5" fill="#2ab5cc"/>
+  <!-- ── TOP HORIZONTAL BAR ── -->
+  <!-- Main bar line -->
+  <line x1="17" y1="18" x2="83" y2="18" stroke="url(#lineG)" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- Left micro-extension -->
+  <line x1="10" y1="18" x2="17" y2="18" stroke="#12355f" stroke-width="1.1" stroke-linecap="round" opacity="0.55"/>
+  <!-- Right micro-extension -->
+  <line x1="83" y1="18" x2="90" y2="18" stroke="#12355f" stroke-width="1.1" stroke-linecap="round" opacity="0.55"/>
 
-  <!-- 8 radiating lines downward -->
-  <line x1="100" y1="95" x2="60"  y2="140" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
-  <line x1="100" y1="95" x2="72"  y2="145" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
-  <line x1="100" y1="95" x2="85"  y2="148" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
-  <line x1="100" y1="95" x2="100" y2="150" stroke="#1a9db5" stroke-width="1.3" stroke-linecap="round"/>
-  <line x1="100" y1="95" x2="115" y2="148" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
-  <line x1="100" y1="95" x2="128" y2="145" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
-  <line x1="100" y1="95" x2="140" y2="140" stroke="#1a9db5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <!-- ── VERTICAL STEM ── -->
+  <line x1="50" y1="18" x2="50" y2="62" stroke="url(#lineG)" stroke-width="1.5" stroke-linecap="round"/>
 
-  <!-- End dots on radiating lines -->
-  <circle cx="60"  cy="140" r="2.2" fill="#2ab5cc" opacity="0.8"/>
-  <circle cx="72"  cy="145" r="2.2" fill="#2ab5cc" opacity="0.8"/>
-  <circle cx="85"  cy="148" r="2.2" fill="#2ab5cc" opacity="0.8"/>
-  <circle cx="100" cy="150" r="2.8" fill="#2ab5cc"/>
-  <circle cx="115" cy="148" r="2.2" fill="#2ab5cc" opacity="0.8"/>
-  <circle cx="128" cy="145" r="2.2" fill="#2ab5cc" opacity="0.8"/>
-  <circle cx="140" cy="140" r="2.2" fill="#2ab5cc" opacity="0.8"/>
+  <!-- ── TOP BAR NODES (7 + 2 extensions) ── -->
+  <circle cx="10" cy="18" r="2"   fill="#12355f" opacity="0.55"/>
+  <circle cx="17" cy="18" r="2.8" fill="#12355f"/>
+  <circle cx="33" cy="18" r="3.2" fill="#163e70"/>
+  <circle cx="50" cy="18" r="3.8" fill="#1a5a95"/>
+  <circle cx="67" cy="18" r="3.2" fill="#163e70"/>
+  <circle cx="83" cy="18" r="2.8" fill="#12355f"/>
+  <circle cx="90" cy="18" r="2"   fill="#12355f" opacity="0.55"/>
+
+  <!-- ── CENTER GLOW NODE ── -->
+  <circle cx="50" cy="62" r="7"   fill="#1295b5" opacity="0.5"/>
+  <circle cx="50" cy="62" r="5"   fill="#1fb8d0"/>
+  <circle cx="50" cy="62" r="2.5" fill="white"   opacity="0.75"/>
+
+  <!-- ── 7 RADIATING LINES ── -->
+  <line x1="50" y1="62" x2="14"  y2="105" stroke="#1295b5" stroke-width="1.1" stroke-linecap="round" opacity="0.80"/>
+  <line x1="50" y1="62" x2="25"  y2="110" stroke="#1295b5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <line x1="50" y1="62" x2="37"  y2="113" stroke="#1295b5" stroke-width="1.1" stroke-linecap="round" opacity="0.90"/>
+  <line x1="50" y1="62" x2="50"  y2="116" stroke="#1fb8d0" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="50" y1="62" x2="63"  y2="113" stroke="#1295b5" stroke-width="1.1" stroke-linecap="round" opacity="0.90"/>
+  <line x1="50" y1="62" x2="75"  y2="110" stroke="#1295b5" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <line x1="50" y1="62" x2="86"  y2="105" stroke="#1295b5" stroke-width="1.1" stroke-linecap="round" opacity="0.80"/>
+
+  <!-- ── END DOTS ON RADIATING LINES ── -->
+  <circle cx="14"  cy="105" r="2.2" fill="#1fb8d0" opacity="0.75"/>
+  <circle cx="25"  cy="110" r="2.4" fill="#1fb8d0" opacity="0.80"/>
+  <circle cx="37"  cy="113" r="2.6" fill="#1fb8d0" opacity="0.87"/>
+  <circle cx="50"  cy="116" r="3.0" fill="#1fb8d0"/>
+  <circle cx="63"  cy="113" r="2.6" fill="#1fb8d0" opacity="0.87"/>
+  <circle cx="75"  cy="110" r="2.4" fill="#1fb8d0" opacity="0.80"/>
+  <circle cx="86"  cy="105" r="2.2" fill="#1fb8d0" opacity="0.75"/>
 </svg>
