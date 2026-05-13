@@ -1,11 +1,11 @@
 [phases.setup]
-nixPkgs = ["nodejs_22", "pnpm"]
+nixPkgs = ["nodejs_20"]
 
 [phases.install]
-cmds = ["pnpm install --no-frozen-lockfile"]
+cmds = ["npm install"]
 
 [phases.build]
-cmds = ["pnpm run build"]
+cmds = ["npm run build"]
 
 [start]
 cmd = "npx serve dist -l 3000"
