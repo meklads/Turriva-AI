@@ -33,14 +33,14 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-gray-100"
     >
       <div className="container-xl">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to="/" className="group" style={{ textDecoration: 'none', display: 'inline-flex' }}>
             <img
               src={turrivaLogo}
               alt="Turriva"
               className="group-hover:scale-105 transition-transform"
-              style={{ height: 60, width: 'auto' }}
+              style={{ height: 90, width: 'auto' }}
             />
           </Link>
 
